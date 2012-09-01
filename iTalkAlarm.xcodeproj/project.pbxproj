@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		F475043A15EBF01E00B837A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F475043915EBF01E00B837A2 /* Security.framework */; };
 		F9070C7915E4A6E200DD5287 /* aps_development.cer in Resources */ = {isa = PBXBuildFile; fileRef = F9070C7815E4A6E200DD5287 /* aps_development.cer */; };
 		F907821B15D8C8F9009EB487 /* iTunesArtwork .png in Resources */ = {isa = PBXBuildFile; fileRef = F907821A15D8C8F9009EB487 /* iTunesArtwork .png */; };
 		F907821D15D8C8FF009EB487 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F907821C15D8C8FF009EB487 /* Icon@2x.png */; };
@@ -72,6 +73,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iTalkAlarm_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTalkAlarm_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iTalkAlarm-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iTalkAlarm-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F475043915EBF01E00B837A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F9070C7815E4A6E200DD5287 /* aps_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_development.cer; sourceTree = "<group>"; };
 		F907821A15D8C8F9009EB487 /* iTunesArtwork .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork .png"; sourceTree = "<group>"; };
 		F907821C15D8C8FF009EB487 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F475043A15EBF01E00B837A2 /* Security.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -208,7 +211,6 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				F9B2B5A015C67E57008E7733 /* Entitlements.plist */,
-				F947416315C92E7300D66FBD /* MediaPlayer.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -236,6 +238,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F475043915EBF01E00B837A2 /* Security.framework */,
 				F947410115C9291E00D66FBD /* QuartzCore.framework */,
 				F96BEDFD15C6A59A0079236D /* CoreAudio.framework */,
 				F96BED3515C68A920079236D /* AudioToolbox.framework */,
@@ -243,6 +246,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				F96BED3715C68AA40079236D /* AVFoundation.framework */,
+				F947416315C92E7300D66FBD /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,6 +422,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iTalkAlarm_Prefix.pch;
 				INFOPLIST_FILE = "iTalkAlarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = iTalkAlarm;
 			};
 			name = Debug;
@@ -431,6 +436,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iTalkAlarm_Prefix.pch;
 				INFOPLIST_FILE = "iTalkAlarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = iTalkAlarm;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -444,6 +450,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
@@ -457,6 +464,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -474,6 +482,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = iphoneos/usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BD4CB9EA-160E-4F0A-B7BD-D2798EEEF7F3";
@@ -491,6 +500,7 @@
 				GCC_PREFIX_HEADER = iTalkAlarm_Prefix.pch;
 				HEADER_SEARCH_PATHS = iphoneos/usr/include/libxml2;
 				INFOPLIST_FILE = "iTalkAlarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "\"/Developer/swetank/iTalkAlarm\"/**";
 				PRODUCT_NAME = iTalkAlarm;
 				VALIDATE_PRODUCT = YES;

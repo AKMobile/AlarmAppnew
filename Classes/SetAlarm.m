@@ -367,8 +367,7 @@ NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
 	
 	if (cell == nil) {
 		
-		cell = [[[CustomAlarmTable alloc] initWithFrame: CGRectZero 
-									   reuseIdentifier: kCellIdentifier] autorelease];
+		cell = [[[CustomAlarmTable alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: kCellIdentifier] autorelease];
 	}
 	
 //	RecordVoice  *mainViewController = (RecordVoice *) self.delegate;

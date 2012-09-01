@@ -86,8 +86,7 @@
 	
 	if (cell == nil) {
 		
-		cell = [[[UITableViewCell alloc] initWithFrame: CGRectZero 
-										reuseIdentifier: kCellIdentifier] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: kCellIdentifier] autorelease];
 	}
 	
 	//	RecordVoice  *mainViewController = (RecordVoice *) self.delegate;
